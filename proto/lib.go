@@ -375,6 +375,10 @@ func (p *Buffer) SetBuf(s []byte) {
 // Bytes returns the contents of the Buffer.
 func (p *Buffer) Bytes() []byte { return p.buf }
 
+// 
+func (p *Buffer) Index() int {
+	return p.index
+}
 // SetDeterministic sets whether to use deterministic serialization.
 //
 // Deterministic serialization guarantees that for a given binary, equal
